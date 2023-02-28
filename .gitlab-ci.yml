@@ -1,0 +1,21 @@
+image: gitlab-registry.surrey.ac.uk/csee/com1028/films4you/build:2022-23
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - mvn compile
+  only:
+    - main
+
+test:
+  stage: test
+  needs:
+    - build
+  script:
+    - mvn test
+  only:
+    - main

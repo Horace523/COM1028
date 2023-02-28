@@ -1,0 +1,13 @@
+Films4You has the following requirements for you to implement:
+1. Show all films whose titles begin with D.
+2. Which film has the highest number of actors.
+3. How many films have the word 'Documentary' in their description.
+4. For each language, how many actors act in movies of that language.
+
+They also have other requirements; the system shall:
+  i. run using Java 11;
+ ii. follow Google's Style guide for Java as enforced by CheckStyle;
+iii. have each requirement in its own package and an entry point that implements RequirementInterface;
+ iv. be unit tested using JUnit 4 to prove correctness;
+  v. use Maven as its build system; and,
+ vi. make use of docstring commenting in non-test classes.
