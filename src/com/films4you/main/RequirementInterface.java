@@ -4,27 +4,21 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
 /**
- * An interface for use on the single class that wraps the call for a requirement, enforcing that
- * they have methods getValueAsString and getHumanReadable.
-
- * @author Nick Frymann
- *
+ * An interface for the requirements in the Films4You project.
  */
 public interface RequirementInterface {
 
   /**
-   * Method to get any non-formatted result of implemented requirements. For example:
-   * "Action,Comedy,Horror"
-
-   * @return a string which contains the result as text to be processed further.
+   * Get the value of the requirement as a string representation.
+   *
+   * @return The value of the requirement as a string, or null if not applicable.
    */
   public @Nullable String getValueAsString();
 
   /**
-   * Method to format results in a human-readable format. For example: "The top three genres are,
-   * starting with most popular: Action, Comedy, Horror"
-
-   * @return a string which contains the result as a human-readable string.
+   * Get the human-readable representation of the requirement.
+   *
+   * @return The human-readable representation of the requirement as a string.
    */
   public @NonNull String getHumanReadable();
 }
